@@ -15,7 +15,8 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   PortraitForm in 'PortraitForm.pas' {PForm},
-  LandscapeForm in 'LandscapeForm.pas' {LSForm};
+  LandscapeForm in 'LandscapeForm.pas' {LSForm},
+  Unit1 in 'Unit1.pas' {Form1};
 
 {$R *.res}
 
@@ -23,5 +24,6 @@ begin
   Application.Initialize;
   Application.CreateForm(TPForm, PForm);
   Application.CreateForm(TLSForm, LSForm);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
